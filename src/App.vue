@@ -137,10 +137,21 @@
           or a JMU sweatshirt that sealed the deal (we will compromise and include both versions).</p>
         </div>
 
-        <div class="column our-story-stories">
+        <div class="column our-story-stories block">
           <div class="row">
-            <div class="column column-50"></div>
-            <div class="column column-50"></div>
+            <div class="column column-50">
+              <div class="something"></div>
+              <p class="our-story">
+Lauren started working at Gannett/USA Today in June 2015 after her JMU friend Erika encouraged her to apply for a position on their design team. One September morning, Erika and Lauren were walking on the patio outside of the office and saw an injured hummingbird lying on the ground. The girls were casually saving the hummingbird's life (with Lauren afraid to touch it and giving it water) when an unfamiliar colleague walked by them and asked what they were doing. The new friend picked up the hummingbird and helped the little bird fly away. After the grand save, the unfamiliar face introduced himself and walked off. Lauren turned to Erika and asked "do you know that guy?"...Erika replied "nope" and little did either of them know Lauren would fall for the hummingbird savior :p<br/>
+***Lauren thinks this is not how they met because Hunter did not talk to her again for a few weeks***
+              </p>
+            </div>
+            <div class="column column-50">
+              <div class="something"></div>
+              <p class="our-story">
+Lauren and Hunter were working on the same floor of Gannett for a few months before ever running into each other. One Friday afternoon, Lauren was nervous for a date later that evening when she started pacing in the office. She ran into a group of unfamiliar co workers and one of them happened to be wearing a JMU sweatshirt. Everyone introduced themselves and Lauren brought up she was also a JMU grad. The group mentioned going to the gym at lunch and invited her to join next week if she wanted. She took note and later in the evening after a very sad and boring date could not wait for Monday's gym squad. After a few days of awkward conversations on gym equipment Lauren was asked out on a date! Lauren's favorite gym memory is Hunter telling her that he had a cat, loved Star Wars, and wanted to visit a local brewery…..which is where she had to pretend to like beer, not be allergic to cats, or share that she had never seen a Star Wars film. But despite having those odds against them, the force was with them ;)
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -335,5 +346,16 @@ export default {
 
   .our-story-preface-text {
     width: 70%;
+  }
+
+  .our-story-stories {
+    text-align: left;
+  }
+  
+  .something {
+    background-color: grey;
+    height: 100px;
+    margin: 20px auto;
+    width: 200px;
   }
 </style>
