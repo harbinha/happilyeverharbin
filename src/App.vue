@@ -162,43 +162,8 @@ Lauren and Hunter were working on the same floor of Gannett for a few months bef
     </div>
     <div class="row bridal-party block">
       <!-- TODO: how is bridal party organized on page? -->
-      <div class="column column-50 bridesmaids">
-        
-        <!-- TODO: could probably be factored out and looped over -->
-        <div class="person">
-          <div class="row">
-            <div class="column column-50 person-img">
-              image here
-            </div>
-            <div class="column column-50 person-text">
-              <h3 class="person-name">Nicole</h3>
-              <p class="person-description">
-                Calls Lauren <span class="bold">Lstearns</span> and probably always will... Sorry Hunter.
-              </p>
-              <p class="how-we-met bold">How we met:</p>
-              <p class="how-we-met-answer">JMU!</p>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-      <div class="column column-50 groomsmen">
-        <div class="person">
-          <div class="row">
-            <div class="column column-50 person-img">
-              image here
-            </div>
-            <div class="column column-50 person-text">
-              <h3 class="person-name">Obi-Wan Kenobi</h3>
-              <p class="person-description">
-                Became stronger than we can possibly imagine.
-              </p>
-              <p class="how-we-met bold">How we met:</p>
-              <p class="how-we-met-answer">Rescued from Tuscan Raiders on Tatooine</p>
-            </div>
-          </div>
-        </div>
+      <div v-for="person in bridalParty" :key="person.name" class="column column-50">
+        <person :name="person.name" :description="person.description" :how-we-met="person.howWeMet" :image-url="person.imageUrl"></person>
       </div>
     </div>
 
@@ -238,14 +203,49 @@ Lauren and Hunter were working on the same floor of Gannett for a few months bef
 </template>
 
 <script>
+import person from './components/person.vue';
 export default {
   name: 'app',
-  components: {},
+  components: {
+    'person': person
+  },
   data() {
     return {
       omniUrl: 'https://www.omnihotels.com/hotels/charlottesville',
       hamptonUrl: 'https://secure3.hilton.com/en_US/hp/reservation/book.htm?execution=e1s1',
-      dardenUrl: 'https://www.reseze.net/cassets/mkt/Inn_at_Darden/lp/96863.html'
+      dardenUrl: 'https://www.reseze.net/cassets/mkt/Inn_at_Darden/lp/96863.html',
+      bridalParty: [
+        {
+          name: 'Obi-Wan Kenobi',
+          description: 'Became more powerful than you can possibly imagine',
+          howWeMet: 'Saved me from Tuscan Raiders on Tatooine',
+          imageUrl: ''
+        },
+        {
+          name: 'Yoda',
+          description: 'The lean green sith fighting machine',
+          howWeMet: 'Riding my back on Dagobah',
+          imageUrl: ''
+        },
+        {
+          name: 'Vader',
+          description: 'The Emporer\'s wrath',
+          howWeMet: 'Bastard cut my hand off on cloud city',
+          imageUrl: ''
+        },
+        {
+          name: 'Chewbacca',
+          description: 'Homeboy and co-pilot',
+          howWeMet: 'Getting a lift from Mos Eisly cantina with Obi-Wan',
+          imageUrl: ''
+        },
+        {
+          name: 'Leia',
+          description: 'Princess from Alderaan',
+          howWeMet: 'Rescued her from a star destroyer like a fucking champion',
+          imageUrl: ''
+        }
+      ]
     }
   }
 }
@@ -430,7 +430,9 @@ export default {
     margin: 20px auto;
     width: 200px;
   }
-
+  .bridal-party {
+    flex-wrap: wrap;
+  }
   .bridal-party-title,
   .registry-title,
   .our-story-title {
