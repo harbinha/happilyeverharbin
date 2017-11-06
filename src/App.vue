@@ -123,10 +123,10 @@
       </div>
 
       <!-- OUR STORY -->
+      <div class="column our-story-title">
+        <h3 class="cabernet">Our Story</h3>
+      </div>
       <div class="row our-story block">
-        <div class="column our-story-title">
-          <h3>Our Story</h3>
-        </div>
         <div class="column our-story-image">
           <p style="color: white; font-weight: bold;">GET IMAGE</p>
         </div>
@@ -156,6 +156,69 @@ Lauren and Hunter were working on the same floor of Gannett for a few months bef
         </div>
       </div>
 
+    <!-- BRIDAL PARTY -->
+    <div class="bridal-party-title">
+      <h3 class="cabernet">Bridal Party</h3>
+    </div>
+    <div class="row bridal-party block">
+      <!-- TODO: how is bridal party organized on page? -->
+      <div class="column column-50 bridesmaids">
+        
+        <!-- TODO: could probably be factored out and looped over -->
+        <div class="person">
+          <div class="row">
+            <div class="column column-50 person-img">
+              image here
+            </div>
+            <div class="column column-50 person-text">
+              <h3 class="person-name">Nicole</h3>
+              <p class="person-description">
+                Calls Lauren <span class="bold">Lstearns</span> and probably always will... Sorry Hunter.
+              </p>
+              <p class="how-we-met bold">How we met:</p>
+              <p class="how-we-met-answer">JMU!</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="column column-50 groomsmen">
+        
+      </div>
+    </div>
+
+
+    <!-- REGISTRY -->
+    <div class="registry-title">
+      <h3 class="cabernet">Registry</h3>
+    </div>
+    <div class="row registries">
+      <div class="column column-25">
+        <div class="registry">
+          <p>Amazon</p>
+        </div>
+      </div>
+      <div class="column column-25">
+        <div class="registry">
+          <p>Crate&amp;Barrel</p>
+        </div>
+      </div>
+      <div class="column column-25">
+        <div class="registry">
+          <p>ZOLA</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CLOSING NOTES -->
+    <div class="row closing-notes">
+      <div class="column">
+        <p><span class="bold">Site Designed and Developed By:</span> Hunter and Lauren</p>
+        <p class="closing-day-count">See you in 339 Days!</p>
+      </div>
+    </div>
     </div>
   </div>
 </template>
@@ -325,12 +388,6 @@ export default {
   .our-story {
     flex-direction: column;
   }
-
-  .our-story-title {
-    color: #540212;
-    padding-bottom: 20px;
-    text-align: left;
-  }
   .our-story-image {
     background-color: grey;
     height: 300px;
@@ -357,5 +414,55 @@ export default {
     height: 100px;
     margin: 20px auto;
     width: 200px;
+  }
+
+  .bridal-party-title,
+  .registry-title,
+  .our-story-title {
+    color: #540212;
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  .bridesmaids, .groomsmen {
+    height: 600px;
+  }
+  .person-img {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+  }
+  .person-name {
+    color: #540212;
+  }
+  .person-text {
+    text-align: left;
+  }
+
+  .registries {
+    background-color: #07334e;
+    justify-content: space-between;
+    height: 200px;
+  }
+
+  .registry {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  /* TODO: remove one I get registry logos */
+  .registry p {
+    align-self: center;
+    font-weight: bold;
+  }
+
+  .closing-notes {
+    padding: 20px 0;
+  }
+
+  .closing-day-count {
+    color: #540212;
+    font-style: italic;
   }
 </style>
