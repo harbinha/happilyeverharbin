@@ -184,7 +184,21 @@ Lauren and Hunter were working on the same floor of Gannett for a few months bef
 
       </div>
       <div class="column column-50 groomsmen">
-        
+        <div class="person">
+          <div class="row">
+            <div class="column column-50 person-img">
+              image here
+            </div>
+            <div class="column column-50 person-text">
+              <h3 class="person-name">Obi-Wan Kenobi</h3>
+              <p class="person-description">
+                Became stronger than we can possibly imagine.
+              </p>
+              <p class="how-we-met bold">How we met:</p>
+              <p class="how-we-met-answer">Rescued from Tuscan Raiders on Tatooine</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -260,7 +274,7 @@ export default {
   }
 
   .block {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 20px;
   }
 
@@ -369,6 +383,7 @@ export default {
   .shuttle {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    padding: 20px 0;
   }
 
   .shuttle-text { 
