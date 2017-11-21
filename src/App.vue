@@ -3,18 +3,16 @@
     <div class="container main">
 
       <!-- HEADER -->
-      <div class="row header block">
-        <div class="row">
-          <div class="column column-75 header-title">
-            <h1 class="cabernet">Happily Ever Harbin</h1>
-          </div>
+      <div class="row header block">        
+        <div class="col-12 col-md-8 header-title">
+          <h1 class="cabernet">Happily Ever Harbin</h1>
+        </div>
 
-          <div class="column column-25 header-meta">
-            <!-- TODO: break this out to it's own vue  -->
-            <div class="meta-block">
-              <div class="hashtag bold">#HappilyEverHarbin</div>
-              <div class="days-to-go">339 Days To Go</div>
-            </div>
+        <div class="col-12 col-md-4 header-meta">
+          <!-- TODO: break this out to it's own vue  -->
+          <div class="meta-block">
+            <div class="hashtag bold">#HappilyEverHarbin</div>
+            <div class="days-to-go">339 Days To Go</div>
           </div>
         </div>
       </div>
@@ -22,13 +20,19 @@
       
       <!-- NAV LINKS -->
       <div class="row nav block">
+        <div class="col-12 col-sm-3"><a href="#home">Accommodations</a></div>
+        <div class="col-12 col-sm-3"><a href="#news">Our Story</a></div>
+        <div class="col-12 col-sm-3"><a href="#contact">Bridal Party</a></div>
+        <div class="col-12 col-sm-3"><a href="#about">Registry</a></div>
+      </div>
+      <!-- <div class="row nav block">
         <ul class="nav-links">
           <li><a href="#home">Accomodations</a></li>
           <li><a href="#news">Our Story</a></li>
           <li><a href="#contact">Bridal Party</a></li>
           <li><a href="#about">Registy</a></li>
         </ul>
-      </div>
+      </div> -->
 
 
       <!-- INTRO BLOCK -->
@@ -216,33 +220,75 @@ export default {
       dardenUrl: 'https://www.reseze.net/cassets/mkt/Inn_at_Darden/lp/96863.html',
       bridalParty: [
         {
-          name: 'Obi-Wan Kenobi',
-          description: 'Became more powerful than you can possibly imagine',
-          howWeMet: 'Saved me from Tuscan Raiders on Tatooine',
+          name: 'Jenna',
+          title: 'Maid of Honor',
+          description: 'Lauren\'s first friend and has more blackmail than the whole bridal party combined.',
           imageUrl: ''
         },
         {
-          name: 'Yoda',
-          description: 'The lean green sith fighting machine',
-          howWeMet: 'Riding my back on Dagobah',
+          name: 'Andrew',
+          title: 'Best Man',
+          description: 'Has witnessed his brother with hair. ___MORE___',
           imageUrl: ''
         },
         {
-          name: 'Vader',
-          description: 'The Emporer\'s wrath',
-          howWeMet: 'Bastard cut my hand off on cloud city',
+          name: 'Alli',
+          title: 'Bridesmaid',
+          description: 'We shared a carpet square in Pre-K...it was kind of a big deal. Now we\'re family :)',
           imageUrl: ''
         },
         {
-          name: 'Chewbacca',
-          description: 'Homeboy and co-pilot',
-          howWeMet: 'Getting a lift from Mos Eisly cantina with Obi-Wan',
+          name: 'Bryton',
+          title: 'Groomsman',
+          description: 'It all started in a townhouse in a college town far far away. Hunter\'s college roommate who also loves Star Wars.',
           imageUrl: ''
         },
         {
-          name: 'Leia',
-          description: 'Princess from Alderaan',
-          howWeMet: 'Rescued her from a star destroyer like a fucking champion',
+          name: 'Carson',
+          title: 'Bridesmaid',
+          description: 'Adventures at camp and abroad. If it involves food and walking way too far...she\'s in!',
+          imageUrl: ''
+        },
+        {
+          name: 'Chad',
+          title: 'Bridesdude',
+          description: 'Highschool to college to long phone calls about struggling to adult :p Chad has been Lauren’s wingman from the beginning!',
+          imageUrl: ''
+        },
+        {
+          name: 'John',
+          title: 'Groomsman',
+          description: 'He had to put up with Hunter as a teenager....drums and heavy metal. Respect.',
+          imageUrl: ''
+        },
+        {
+          name: 'Katrina',
+          title: 'Bridesmaid',
+          description: 'She survived coding classes and media law with Lauren. Now she gets to celebrate with beer festivals in CO!',
+          imageUrl: ''
+        },
+        {
+          name: 'Kevin',
+          title: 'Groomsman',
+          description: 'He has lived with Hunter and put up with his antics. You can find these guys at the movies or local breweries now.',
+          imageUrl: ''
+        },
+        {
+          name: 'Molly',
+          title: 'Bridesmaid',
+          description: 'She is Lauren’s most artistic friend! They took art classes together from grade school - high school.',
+          imageUrl: ''
+        },
+        {
+          name: 'Nicole',
+          title: 'Bridesmaid',
+          description: 'She met Lstearns senior year and the two have been inseperable since. She also coined the name Lstearns and won\'t be changing that...',
+          imageUrl: ''
+        },
+        {
+          name: 'Sarah',
+          title: 'Groomslady',
+          description: 'She is Hunter’s drinking buddy and Lauren\'s makeup guru. The perfect day for Sarah is a trip to Sephora and then an evening at a local brewery.',
           imageUrl: ''
         }
       ]
@@ -252,8 +298,8 @@ export default {
 </script>
 
 <style>
-  h1, h2, h3, p, ul, li {
-    margin: 0;
+  a {
+    color: #000;  
   }
   .bold {
     font-weight: bold;
@@ -292,7 +338,9 @@ export default {
   }
 
   /* .meta-block {} */
-
+  .nav {
+    max-width: 560px;
+  }
   .nav-links {
     list-style-type: none;
     padding: 0;
@@ -481,5 +529,14 @@ export default {
   .closing-day-count {
     color: #540212;
     font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+      .header-meta {
+        order: -1;
+      }
+      .header-title {
+        text-align: center;
+      }
   }
 </style>
