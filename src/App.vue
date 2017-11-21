@@ -1,105 +1,102 @@
 <template>
   <div id="app">
-    <div class="container main">
+    <div class="main">
+      <div class="container"> 
+        <!-- HEADER -->
+        <div class="row header block">        
+          <div class="col-12 col-md-8 header-title">
+            <h1 class="cabernet">Happily Ever Harbin</h1>
+          </div>
 
-      <!-- HEADER -->
-      <div class="row header block">        
-        <div class="col-12 col-md-8 header-title">
-          <h1 class="cabernet">Happily Ever Harbin</h1>
-        </div>
-
-        <div class="col-12 col-md-4 header-meta">
-          <!-- TODO: break this out to it's own vue  -->
-          <div class="meta-block">
-            <div class="hashtag bold">#HappilyEverHarbin</div>
-            <div class="days-to-go">339 Days To Go</div>
+          <div class="col-12 col-md-4 header-meta">
+            <!-- TODO: break this out to it's own vue  -->
+            <div class="meta-block">
+              <div class="hashtag bold">#HappilyEverHarbin</div>
+              <div class="days-to-go">339 Days To Go</div>
+            </div>
           </div>
         </div>
-      </div>
-      
-      
-      <!-- NAV LINKS -->
-      <div class="row nav block">
-        <div class="col-12 col-sm-3"><a href="#home">Accommodations</a></div>
-        <div class="col-12 col-sm-3"><a href="#news">Our Story</a></div>
-        <div class="col-12 col-sm-3"><a href="#contact">Bridal Party</a></div>
-        <div class="col-12 col-sm-3"><a href="#about">Registry</a></div>
-      </div>
-      <!-- <div class="row nav block">
-        <ul class="nav-links">
-          <li><a href="#home">Accomodations</a></li>
-          <li><a href="#news">Our Story</a></li>
-          <li><a href="#contact">Bridal Party</a></li>
-          <li><a href="#about">Registy</a></li>
-        </ul>
-      </div> -->
+        
+        
+        <!-- NAV LINKS -->
+        <div class="row nav block">
+          <div class="col-12 col-sm-3"><a href="#home">Accommodations</a></div>
+          <div class="col-12 col-sm-3"><a href="#news">Our Story</a></div>
+          <div class="col-12 col-sm-3"><a href="#contact">Bridal Party</a></div>
+          <div class="col-12 col-sm-3"><a href="#about">Registry</a></div>
+        </div>
 
 
-      <!-- INTRO BLOCK -->
-      <div class="row intro block">
-        <p>
-            We are so excited to celebrate with our closest <span class="bold cabernet">family and friends!</span><br/>
-            Thank you for traveling near and far to <span class="bold cabernet">eat, drink, and dance</span> with us.<br/>
-            If you have any questions don’t hestitate to contact the<br/>
-            <span class="bold">Maid of Honor, Jenna Stearns at jenna.paige.stearns@gmail.com</span>
-        </p>
+        <!-- INTRO BLOCK -->
+        <div class="row intro block">
+          <p>
+              We are so excited to celebrate with our closest <span class="bold cabernet">family and friends!</span><br/>
+              Thank you for traveling near and far to <span class="bold cabernet">eat, drink, and dance</span> with us.<br/>
+              If you have any questions don’t hestitate to contact the<br/>
+              <span class="bold">Maid of Honor, Jenna Stearns at jenna.paige.stearns@gmail.com</span>
+          </p>
+        </div>
       </div>
-
       <!-- MAP -->
       <div class="row map block">
         <img src="./assets/map.jpg" alt="wedding map">
       </div>
 
+    <div class="container">
 
-      <!-- ACCOMODATIONS -->
-      <div class="row accomodations-header block">
-        <h3 class="cabernet">Accomodations</h3>
-        <div class="bold">We have room blocks at the following hotels</div>
+        <!-- ACCOMmODATIONS -->
+        <div class="row accommodations-header block">
+          <h3 class="accommodations-title cabernet">Accommodations</h3>
+          <div class="bold">We have room blocks at the following hotels</div>
+        </div>
+        <div class="row accommodations-links block">
+          <div class="col-12 col-md-4">
+            <a :href="omniUrl">
+              <div class="accommodation">
+                <div class="accommodation-details">
+                  <span>Omni Charlottesville</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a :href="hamptonUrl">
+              <div class="accommodation">
+                <div class="accommodation-details">
+                  <span>Hampton Inn Charlottesville</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a :href="dardenUrl">
+              <div class="accommodation">
+                <div class="accommodation-details">
+                  <span>University of Virginia Inn at Darden</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="row accomodations-links block">
-        <div class="column column-25">
-          <a :href="omniUrl">
-            <div class="accomodation">
-              <div class="accomodation-details">
-                <p>Omni Charlottesville</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="column column-25">
-          <a :href="hamptonUrl">
-            <div class="accomodation">
-              <div class="accomodation-details">
-                <p>Hampton Inn Charlottesville</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="column column-25">
-          <a :href="dardenUrl">
-            <div class="accomodation">
-              <div class="accomodation-details">
-                <p>University of Virginia Inn at Darden</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
 
       <!-- AIRPORTS -->
       <div class="row airports block">
-        <div class="airports-title">
-          <h3 class="bold">Airports</h3>
-        </div>
-        <div class="column airport-details">
+        
+        
+        <div class="container">
+          
           <div class="row">
-            <div class="column column-50 airports-title">
+            <div class="col airports-title">
+              <h3 class="bold">Airports</h3>
+            </div>
+            <div class="w-100"></div>
+            <div class="col airports-title">
               <p class="airport-name">Charlottesville Albemarle Airport</p>
               <p class="airport-location">(24 mins to the Downtown Mall)</p>
               </p>
             </div>
-            <div class="column column-50 airports-title">
+            <div class="col airports-title">
               <p class="airport-name">Richmond International Airport</p>
               <p class="airport-location">(1hr 20 mins to the Downtown Mall)</p>
               </p>
@@ -110,20 +107,20 @@
 
 
       <!-- LOCAL ATTRACTIONS -->
-      <div class="row attractions block">
-        <p style="color: white; font-weight: bold;">GET IMAGE</p>
-        <!-- <img src="" alt=""> -->
+      <div class="container">
+        <div class="row attractions block">
+          <p style="color: white; font-weight: bold;">GET IMAGE</p>
+          <!-- <img src="" alt=""> -->
+        </div>
       </div>
-
 
       <!-- SHUTTLE -->
       <div class="row shuttle block">
-        <div class="column shuttle-text">
-          <h3 class="shuttle-title">Shuttle</h3>
-          <p class="bold">Shuttle information will be included in your invitation!</p>
-          <p class="bold">Please note that the ceremony will begin at 6:00 PM</p>
+        <div class="container">
+          <h3>Shuttles</h3>
+          <p>Shuttle information will be included in your invitation!</p>
+          <p>Please note that the ceremony will begin at 6:00 PM</p>
         </div>
-        <div class="column shuttle-img"></div>
       </div>
 
       <!-- OUR STORY -->
@@ -362,53 +359,48 @@ export default {
     flex-direction: column;
   }
 
-  .accomodations-header {
+  .accommodations-header {
     flex-direction: column;
     text-align: left;
   }
 
-  .accomodations-links {
-    height: 200px;
+  .accommodations-links {
     justify-content: space-between;
   }
-  .accomodations-links .column {
-    padding: 0; 
+
+  .accommodations-title {
+    font-weight: 300;
+    margin-bottom: 0;
   }
 
-  .accomodation {
+  .accommodation {
     align-items: center;
     background-color: #600f27;
     color: #fff;
     cursor: pointer;
     display: flex;
     font-weight: bold;
+    height: 200px;
     justify-content: center;
-    height: 100%;
-    width: 100%;
   }
 
-  .accomodation-details {
+  .accommodation-details {
+    align-items: center;
+    background-color: #600f27;
     border: 1px solid #fff;
     display: flex;
     height: 90%;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
     width: 90%;
   }
-  .accomodation-details p {
+  .accommodation-details p {
     align-self: center;
   }
 
-  .airports {
+  .airports, .shuttle {
     background-color: #07334e;
-    flex-direction: column;
-    height: 200px;
     padding: 20px;
-  }
-
-  .airport-details {
-    align-items: center;
-    display: flex !important;
   }
 
   .airports-title {
@@ -418,6 +410,7 @@ export default {
 
   .airport-name {
     font-size: 18px;
+    margin-bottom: 0;
   }
   .airport-location {
     font-size: 14px;
@@ -431,21 +424,7 @@ export default {
   .shuttle {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 20px 0;
-  }
-
-  .shuttle-text { 
-    padding-bottom: 30px;
-    padding-top: 10px;
-    text-align: left;
-  }
-
-  .shuttle-title {
-    color: #540212;
-  }
-
-  .shuttle-img {
-    background-color: grey;
+    color: #fff;
   }
 
   .our-story {
