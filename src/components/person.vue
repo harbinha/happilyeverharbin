@@ -1,6 +1,6 @@
 <template>
     <div class="person">
-        <img class="img-fluid" :src="imageUrl" :alt="name">
+        <img class="img-fluid person-img" :src="imageUrl" :alt="name">
         <h3 class="cabernet bold">{{name}}</h3>
         <div class="title">{{title}}</div>
         <div class="description">{{description}}</div>
@@ -18,6 +18,9 @@ export default {
     .person {
         margin-bottom: 40px;
         text-align: left;
+    }
+    .person-img {
+        margin-bottom: 10px;
     }
     .title {
         font-size: 1.6em;

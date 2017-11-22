@@ -19,20 +19,20 @@
         
         
         <!-- NAV LINKS -->
-        <div class="row nav block">
-          <div class="col-12 col-sm-3"><a href="#accommodations">Accommodations</a></div>
-          <div class="col-12 col-sm-3"><a href="#story">Our Story</a></div>
-          <div class="col-12 col-sm-3"><a href="#party">Bridal Party</a></div>
-          <div class="col-12 col-sm-3"><a href="#registry">Registry</a></div>
-        </div>
+        <ul class="nav">
+          <li class="nav-anchor"><a class="nav-href" href="#accommodations">Accommodations</a></li>
+          <li class="nav-anchor"><a class="nav-href" href="#story">Our Story</a></li>
+          <li class="nav-anchor"><a class="nav-href" href="#party">Bridal Party</a></li>
+          <li class="nav-anchor"><a class="nav-href" href="#registry">Registry</a></li>
+        </ul>
 
 
         <!-- OUR FACES -->
-          <div class="row">
-            <div class="col-8">
+          <div class="row our-faces">
+            <div class="col-12 col-sm-8 lead-first-img">
               <img class="img-fluid lead-img" src="./assets/lead-left.jpg" alt="Lauren and Hunter wedding">
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-4">
               <img class="img-fluid lead-img" src="./assets/lead-right.jpg" alt="Lauren and Hunter wedding">
             </div>
             <div class="w-100"></div>
@@ -40,18 +40,22 @@
           </div>
 
         <!-- INTRO BLOCK -->
-        <div class="row intro block">
-          <p>
-              We are so excited to celebrate with our closest <span class="bold cabernet">family and friends!</span><br/>
-              Thank you for traveling near and far to <span class="bold cabernet">eat, drink, and dance</span> with us.<br/>
-              If you have any questions don't hestitate to contact the<br/>
-              <span class="bold">Maid of Honor, Jenna Stearns at jenna.paige.stearns@gmail.com</span>
-          </p>
+        <div class="container">
+          <div class="row intro block">
+            <p>
+                We are so excited to celebrate with our closest <span class="bold cabernet">family and friends!</span><br/>
+                Thank you for traveling near and far to <span class="bold cabernet">eat, drink, and dance</span> with us.<br/>
+                If you have any questions don't hestitate to contact the<br/>
+                <span class="bold">Maid of Honor, Jenna Stearns at jenna.paige.stearns@gmail.com</span>
+            </p>
+          </div>
         </div>
       </div>
       <!-- MAP -->
-      <div class="row map block">
-        <img class="img-fluid" src="./assets/map_website.svg" alt="wedding map">
+      <div class="main-row row map">
+        <div class="container">
+          <img class="img-fluid" src="./assets/map.svg" alt="wedding map">
+        </div>
       </div>
 
     <div class="container">
@@ -85,7 +89,8 @@
             <a :href="dardenUrl"  target="_blank">
               <div class="accommodation">
                 <div class="accommodation-details">
-                  <span>University of Virginia Inn at Darden</span>
+                  <span>University of Virginia <br>
+                    Inn at Darden</span>
                 </div>
               </div>
             </a>
@@ -94,7 +99,7 @@
       </div>
 
       <!-- AIRPORTS -->
-      <div class="row airports block">
+      <div class="main-row row airports block">
         <div class="container">
           <div class="row">
             <div class="col airports-title">
@@ -103,12 +108,12 @@
             <div class="w-100"></div>
             <div class="col airports-title">
               <p class="airport-name">Charlottesville Albemarle Airport</p>
-              <p class="airport-location">(24 mins to the Downtown Mall)</p>
+              <p class="airport-location">(24 mins to the Downtown Pedestrian Mall)</p>
               </p>
             </div>
             <div class="col airports-title">
               <p class="airport-name">Richmond International Airport</p>
-              <p class="airport-location">(1hr 20 mins to the Downtown Mall)</p>
+              <p class="airport-location">(1hr 20 mins to the Downtown Pedestrian Mall)</p>
               </p>
             </div>
           </div>
@@ -122,10 +127,10 @@
       </div>
 
       <!-- SHUTTLE -->
-      <div class="row shuttle">
+      <div class="main-row row shuttle">
         <div class="container">
-          <h3>Shuttles</h3>
-          <p>Shuttle information will be included in your invitation!</p>
+          <h3 class="bold">Shuttles</h3>
+          <p class="shuttles-first-line">Shuttle information will be included in your invitation!</p>
           <p>Please note that the ceremony will begin at 6:00 PM</p>
         </div>
       </div>
@@ -134,14 +139,11 @@
       <!-- OUR STORY -->
       <a name="story"></a>
       <div class="container">
-        <div class="our-story-title">
-          <h3 class="cabernet">Our Story</h3>
-        </div>
-        <div class="row our-story block">
-          <div class="our-story-image">
-            <p style="color: white; font-weight: bold;">GET IMAGE</p>
-          </div>
-        </div>
+        <h3 class="our-story-title">Our Story</h3>
+      </div>
+      <div class="main-row row story-photo block">
+        <p style="color: white;">placeholder.. image needed</p>
+        <!-- <img src="./assets/our_story.png" alt="" class="img-fluid"> -->
       </div>
 
       <div class="container">
@@ -152,7 +154,7 @@
       <div class="container our-story-stories block">
         <div class="row">
           <div class="col-12 col-md-6 story">
-            <p class="bold">Lauren's Summary</p>
+            <p class="bold">Lauren's Story</p>
             <p class="our-story">
               Lauren was nervous for a date one Friday afternoon, so
               she started pacing on the office floor. She ran into a guy in
@@ -164,10 +166,10 @@
             </p>
           </div>
           <div class="col-12 col-md-6 story">
-            <p class="bold">Hunter's Summary</p>
+            <p class="bold">Hunter's Story</p>
             <p class="our-story">
               It was an early summer morning and Lauren and her
-              co-worker (and roomie!) were on the patio outside work
+              co-worker (and roomie!) were on the patio outside 
               trying to save a hummingbird that was on the floor.
               Hunter walked by the girls and decided to help them
               save this bird's life. He was a savior and it was magical.
@@ -196,7 +198,7 @@
     <div class="container registry-title">
       <h3 class="cabernet">Registry</h3>
     </div>
-    <div class="row registries">
+    <div class="main-row row registries">
       <div class="col-12 col-sm-6 col-md-3 registry">
         <a :href="registries.amazon" target="_blank">
           <img class="img-fluid amazon" src="./assets/amazon_logo.png" alt="">
@@ -237,20 +239,20 @@ export default {
     'person': person
   },
   data() {
-    let countDownDate = new Date("Sept 15, 2018 18:00:00").getTime(),
+    let countDownDate = new Date("Sept 15, 2018").getTime(),
         now = new Date().getTime(),
         distance = countDownDate - now,
         days = Math.floor(distance / (1000 * 60 * 60 * 24));
     return {
       daysToGo: days,
-      omniUrl: 'https://www.omnihotels.com/hotels/charlottesville',
-      hamptonUrl: 'https://secure3.hilton.com/en_US/hp/reservation/book.htm?execution=e1s1',
-      dardenUrl: 'https://www.reseze.net/cassets/mkt/Inn_at_Darden/lp/96863.html',
+      omniUrl: 'https://www.omnihotels.com/hotels/charlottesville/weddings/stearns-harbin-wedding',
+      hamptonUrl: 'https://secure3.hilton.com/en_US/hp/reservation/book.htm?inputModule=HOTEL&ctyhocn=CHOMSHX&spec_plan=CHHSHW&arrival=20180914&departure=20180916&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT',
+      dardenUrl: 'https://goo.gl/S4C1Qp',
       registries: {
-        amazon: '',
-        crate: '',
-        sonoma: '',
-        zola: ''
+        amazon: 'https://www.amazon.com/wedding/share/stearns-harbin',
+        crate: 'https://www.crateandbarrel.com/gift-registry/lauren-stearns-and-hunter-harbin/r5710726',
+        sonoma: 'https://www.williams-sonoma.com/registry/22q5z9v9tt/registry-list.html',
+        zola: 'https://www.zola.com/registry/stearns-harbin'
       },
       bridalParty: [
         {
@@ -262,7 +264,7 @@ export default {
         {
           name: 'Andrew',
           title: 'Best Man',
-          description: 'Has witnessed his brother with hair. ___MORE___',
+          description: 'He is Hunter\'s Spartan and Tough Mudder comrade and has witnessed his brother with hair.',
           imageUrl: '/static/andrew_bw.jpg'
         },
         {
@@ -274,7 +276,7 @@ export default {
         {
           name: 'Bryton',
           title: 'Groomsman',
-          description: 'It all started in a townhouse in a college town far far away. Hunter\'s college roommate who also loves Star Wars.',
+          description: 'It all started a long time ago in a college townhouse far, far away.... Hunter\'s roommate at JMU who also loves Star Wars.',
           imageUrl: '/static/bryton_bw.jpg'
         },
         {
@@ -292,7 +294,7 @@ export default {
         {
           name: 'John',
           title: 'Groomsman',
-          description: 'He had to put up with Hunter as a teenager....drums and heavy metal. Respect.',
+          description: 'He is Hunter\'s inspiration and taught him everything about the rewards of hard work, commitment, and discipline. He also had to put up with Hunter as a teenager....drums and heavy metal. Respect. ',
           imageUrl: '/static/john_bw.jpg'
         },
         {
@@ -304,7 +306,7 @@ export default {
         {
           name: 'Kevin',
           title: 'Groomsman',
-          description: 'He has lived with Hunter and put up with his antics. You can find these guys at the movies or local breweries now.',
+          description: 'He has lived with Hunter in college and somehow put up with his antics. Video game and nerd extraordinaire, you can find him and his wife Sarah at the movies or local breweries.',
           imageUrl: '/static/kevin_bw.jpg'
         },
         {
@@ -316,13 +318,13 @@ export default {
         {
           name: 'Nicole',
           title: 'Bridesmaid',
-          description: 'She met Lstearns senior year and the two have been inseperable since. She also coined the name Lstearns and won\'t be changing that...',
+          description: 'She met Lstearns senior year at JMU and the two have been inseperable since. She also coined the name Lstearns and won\'t be changing that...',
           imageUrl: '/static/nicole_bw.jpg'
         },
         {
           name: 'Sarah',
           title: 'Groomslady',
-          description: 'She is Hunter\'s drinking buddy and Lauren\'s makeup guru. The perfect day for Sarah is a trip to Sephora and then an evening at a local brewery.',
+          description: 'She is Hunter\'s drinking buddy and Lauren\'s makeup guru. The perfect day for Sarah is a trip to Sephora and then an evening at a local brewery. Despite Lauren\'s Instagram, she is in fact Sammy\'s mom.',
           imageUrl: '/static/sarah_bw.jpg'
         }
       ]
@@ -338,6 +340,10 @@ export default {
   p, h1, h2, h3 {
     margin-bottom: 0;
   }
+  .main-row {
+    margin-right: 0;
+    margin-left: 0;  
+  }
   .bold {
     font-weight: bold;
   }
@@ -352,10 +358,6 @@ export default {
     color: #2c3e50;
   }
 
-  .main {
-    margin-top: 30px;
-  }
-
   .lead-img {
     max-width: 100%;
   }
@@ -363,6 +365,10 @@ export default {
   .block {
     /* border: 1px solid black; */
     margin-top: 20px;
+  }
+
+  .our-faces {
+    align-items: center;
   }
 
   /* .header {} */
@@ -384,24 +390,19 @@ export default {
 
   /* .meta-block {} */
   .nav {
-    max-width: 560px;
-    margin-bottom: 20px;
-  }
-  .nav-links {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-  }
-  .nav-links li {
-    float: left;
-  }
-  .nav-links a {
-    color: #2c3e50;
-    padding: 0 16px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: left;
     text-transform: uppercase;
   }
-  .nav-links a:hover {
+  .nav-anchor {
+    margin-right: 20px;
+  }
+  .nav-href:hover {
     color: #540212;
+    text-decoration: none;
   }
 
   .attractions {
@@ -409,9 +410,10 @@ export default {
   }
 
   .map {
-    flex-direction: column;
+    background-color: #eaebde;
+    padding-top: 30px;
+    margin-top: 30px;
   }
-
   .accommodations-header {
     flex-direction: column;
     text-align: left;
@@ -457,6 +459,10 @@ export default {
   .airports, .shuttle {
     background-color: #07334e;
     padding: 20px;
+    padding: 20px 20px 26px 20px;
+  }
+  .shuttles-first-line {
+    font-size: 18px;
   }
 
   .airports-title {
@@ -481,6 +487,10 @@ export default {
     padding-bottom: 20px;
   }
 
+  .story-photo {
+    background-color: grey;
+    height: 290px;
+  }
   .our-story-stories {
     text-align: center;
   }
@@ -500,6 +510,9 @@ export default {
     color: #540212;
     padding-top: 20px;
     text-align: left;
+  }
+  .registry-title {
+    margin-bottom: 20px;
   }
   .bridal-party-title {
     margin-bottom: 15px;
@@ -540,10 +553,11 @@ export default {
   }
   .crate {
     max-width: 70%;
+    margin-right: 30px;
   }
   .sonoma {}
   .zola {
-    max-width: 50%;
+    max-width: 55%;
   }
 
   @media (max-width: 768px) {
@@ -555,7 +569,17 @@ export default {
       }
   }
   @media (max-width: 576px) {
+    .nav {
+      flex-direction: column;
+      text-align: center;
+    }
     .registry {
+      margin-bottom: 20px;
+    }
+    .crate {
+      margin-right: 0;
+    }
+    .lead-first-img {
       margin-bottom: 20px;
     }
   }
