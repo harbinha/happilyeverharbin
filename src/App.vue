@@ -123,7 +123,7 @@
 
       <!-- LOCAL ATTRACTIONS -->
       <div class="container">
-        <img class="img-fluid attractions" src="./assets/local_image.svg" alt="local attractions">
+        <img class="img-fluid attractions" src="./assets/local.png" alt="local attractions">
       </div>
 
       <!-- SHUTTLE -->
