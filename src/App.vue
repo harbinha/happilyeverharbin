@@ -12,7 +12,7 @@
             <!-- TODO: break this out to it's own vue  -->
             <div class="meta-block">
               <div class="hashtag bold">#HappilyEverHarbin</div>
-              <div class="days-to-go">339 Days To Go</div>
+              <div class="days-to-go">{{daysToGo}} Days To Go</div>
             </div>
           </div>
         </div>
@@ -20,10 +20,10 @@
         
         <!-- NAV LINKS -->
         <div class="row nav block">
-          <div class="col-12 col-sm-3"><a href="#home">Accommodations</a></div>
-          <div class="col-12 col-sm-3"><a href="#news">Our Story</a></div>
-          <div class="col-12 col-sm-3"><a href="#contact">Bridal Party</a></div>
-          <div class="col-12 col-sm-3"><a href="#about">Registry</a></div>
+          <div class="col-12 col-sm-3"><a href="#accommodations">Accommodations</a></div>
+          <div class="col-12 col-sm-3"><a href="#story">Our Story</a></div>
+          <div class="col-12 col-sm-3"><a href="#party">Bridal Party</a></div>
+          <div class="col-12 col-sm-3"><a href="#registry">Registry</a></div>
         </div>
 
 
@@ -57,6 +57,7 @@
     <div class="container">
 
         <!-- ACCOMmODATIONS -->
+        <a name="accommodations"></a>
         <div class="row accommodations-header block">
           <h3 class="accommodations-title cabernet">Accommodations</h3>
           <div class="bold">We have room blocks at the following hotels</div>
@@ -131,6 +132,7 @@
 
       <hr>
       <!-- OUR STORY -->
+      <a name="story"></a>
       <div class="container">
         <div class="our-story-title">
           <h3 class="cabernet">Our Story</h3>
@@ -177,10 +179,11 @@
       </div>
 
     <!-- BRIDAL PARTY -->
+    <a name="party"></a>
     <div class="container">
       <h3 class="bridal-party-title cabernet">Bridal Party</h3>
       <div class="row">
-        <div v-for="person in bridalParty" :key="person.name" class="col-12 col-sm-5 col-md-4">
+        <div v-for="person in bridalParty" :key="person.name" class="col-12 col-sm-6 col-md-4">
           <person :name="person.name" :description="person.description" :title="person.title" :image-url="person.imageUrl"></person>
         </div>
       </div>
@@ -189,21 +192,30 @@
     <hr>
 
     <!-- REGISTRY -->
+    <a name="registry"></a>
     <div class="container registry-title">
       <h3 class="cabernet">Registry</h3>
     </div>
     <div class="row registries">
-      <div class="col-12 col-sm-6 col-md-3">
-        <img class="img-fluid amazon" src="./assets/amazon_logo.png" alt="">
+      <div class="col-12 col-sm-6 col-md-3 registry">
+        <a :href="registries.amazon" target="_blank">
+          <img class="img-fluid amazon" src="./assets/amazon_logo.png" alt="">
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <img class="img-fluid crate" src="./assets/Crate-Barrel-Logo_white.png" alt="">
+      <div class="col-12 col-sm-6 col-md-3 registry">
+        <a :href="registries.crate" target="_blank">
+          <img class="img-fluid crate" src="./assets/Crate-Barrel-Logo_white.png" alt="">
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <img class="img-fluid sonoma" src="./assets/sonoma.png" alt="">
+      <div class="col-12 col-sm-6 col-md-3 registry">
+        <a :href="registries.sonoma" target="_blank">
+          <img class="img-fluid sonoma" src="./assets/sonoma.png" alt="">
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-3">
-        <img class="img-fluid zola" src="./assets/zola_white.png" alt="">
+      <div class="col-12 col-sm-6 col-md-3 registry">
+        <a :href="registries.zola" target="_blank">
+          <img class="img-fluid zola" src="./assets/zola_white.png" alt="">
+        </a>
       </div>
     </div>
 
@@ -211,7 +223,7 @@
     <!-- CLOSING NOTES -->
     <div class="container closing-notes">
       <p><span class="bold">Site Designed and Developed By:</span> Hunter and Lauren</p>
-      <p class="closing-day-count">See you in 339 Days!</p>
+      <p class="closing-day-count">See you in {{daysToGo}} Days!</p>
     </div>
     </div>
   </div>
@@ -225,10 +237,21 @@ export default {
     'person': person
   },
   data() {
+    let countDownDate = new Date("Sept 15, 2018 18:00:00").getTime(),
+        now = new Date().getTime(),
+        distance = countDownDate - now,
+        days = Math.floor(distance / (1000 * 60 * 60 * 24));
     return {
+      daysToGo: days,
       omniUrl: 'https://www.omnihotels.com/hotels/charlottesville',
       hamptonUrl: 'https://secure3.hilton.com/en_US/hp/reservation/book.htm?execution=e1s1',
       dardenUrl: 'https://www.reseze.net/cassets/mkt/Inn_at_Darden/lp/96863.html',
+      registries: {
+        amazon: '',
+        crate: '',
+        sonoma: '',
+        zola: ''
+      },
       bridalParty: [
         {
           name: 'Jenna',
@@ -518,9 +541,7 @@ export default {
   .crate {
     max-width: 70%;
   }
-  .sonoma {
-    /* max-width: 60%; */
-  }
+  .sonoma {}
   .zola {
     max-width: 50%;
   }
@@ -532,5 +553,10 @@ export default {
       .header-title {
         text-align: center;
       }
+  }
+  @media (max-width: 576px) {
+    .registry {
+      margin-bottom: 20px;
+    }
   }
 </style>
