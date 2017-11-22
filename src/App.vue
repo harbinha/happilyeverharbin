@@ -27,19 +27,31 @@
         </div>
 
 
+        <!-- OUR FACES -->
+          <div class="row">
+            <div class="col-8">
+              <img class="img-fluid lead-img" src="./assets/lead-left.jpg" alt="Lauren and Hunter wedding">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid lead-img" src="./assets/lead-right.jpg" alt="Lauren and Hunter wedding">
+            </div>
+            <div class="w-100"></div>
+            <div class="col-12 photo-credit">Melissa Durham Photography</div>
+          </div>
+
         <!-- INTRO BLOCK -->
         <div class="row intro block">
           <p>
               We are so excited to celebrate with our closest <span class="bold cabernet">family and friends!</span><br/>
               Thank you for traveling near and far to <span class="bold cabernet">eat, drink, and dance</span> with us.<br/>
-              If you have any questions don’t hestitate to contact the<br/>
+              If you have any questions don't hestitate to contact the<br/>
               <span class="bold">Maid of Honor, Jenna Stearns at jenna.paige.stearns@gmail.com</span>
           </p>
         </div>
       </div>
       <!-- MAP -->
       <div class="row map block">
-        <img src="./assets/map.jpg" alt="wedding map">
+        <img class="img-fluid" src="./assets/map_website.svg" alt="wedding map">
       </div>
 
     <div class="container">
@@ -51,7 +63,7 @@
         </div>
         <div class="row accommodations-links block">
           <div class="col-12 col-md-4">
-            <a :href="omniUrl">
+            <a :href="omniUrl"  target="_blank">
               <div class="accommodation">
                 <div class="accommodation-details">
                   <span>Omni Charlottesville</span>
@@ -60,7 +72,7 @@
             </a>
           </div>
           <div class="col-12 col-md-4">
-            <a :href="hamptonUrl">
+            <a :href="hamptonUrl"  target="_blank">
               <div class="accommodation">
                 <div class="accommodation-details">
                   <span>Hampton Inn Charlottesville</span>
@@ -69,7 +81,7 @@
             </a>
           </div>
           <div class="col-12 col-md-4">
-            <a :href="dardenUrl">
+            <a :href="dardenUrl"  target="_blank">
               <div class="accommodation">
                 <div class="accommodation-details">
                   <span>University of Virginia Inn at Darden</span>
@@ -82,10 +94,7 @@
 
       <!-- AIRPORTS -->
       <div class="row airports block">
-        
-        
         <div class="container">
-          
           <div class="row">
             <div class="col airports-title">
               <h3 class="bold">Airports</h3>
@@ -108,14 +117,11 @@
 
       <!-- LOCAL ATTRACTIONS -->
       <div class="container">
-        <div class="row attractions block">
-          <p style="color: white; font-weight: bold;">GET IMAGE</p>
-          <!-- <img src="" alt=""> -->
-        </div>
+        <img class="img-fluid attractions" src="./assets/local_image.svg" alt="local attractions">
       </div>
 
       <!-- SHUTTLE -->
-      <div class="row shuttle block">
+      <div class="row shuttle">
         <div class="container">
           <h3>Shuttles</h3>
           <p>Shuttle information will be included in your invitation!</p>
@@ -123,81 +129,89 @@
         </div>
       </div>
 
+      <hr>
       <!-- OUR STORY -->
-      <div class="column our-story-title">
-        <h3 class="cabernet">Our Story</h3>
+      <div class="container">
+        <div class="our-story-title">
+          <h3 class="cabernet">Our Story</h3>
+        </div>
+        <div class="row our-story block">
+          <div class="our-story-image">
+            <p style="color: white; font-weight: bold;">GET IMAGE</p>
+          </div>
+        </div>
       </div>
-      <div class="row our-story block">
-        <div class="column our-story-image">
-          <p style="color: white; font-weight: bold;">GET IMAGE</p>
-        </div>
 
-        <div class="column our-story-preface">
-          <p class="our-story-preface-text">Lauren and Hunter can both agree that they met at work.<br/>
-          However, there is still debate whether it was the moment they ran into each other with a hummingbird 
-          or a JMU sweatshirt that sealed the deal (we will compromise and include both versions).</p>
-        </div>
+      <div class="container">
+        <p>Lauren and Hunter can both agree that they met at work.<br />
+          However, there is still debate whether it was the moment they ran into each other with a hummingbird or a JMU sweatshirt that sealed the deal.</p>
+      </div>
 
-        <div class="column our-story-stories block">
-          <div class="row">
-            <div class="column column-50">
-              <div class="something"></div>
-              <p class="our-story">
-Lauren started working at Gannett/USA Today in June 2015 after her JMU friend Erika encouraged her to apply for a position on their design team. One September morning, Erika and Lauren were walking on the patio outside of the office and saw an injured hummingbird lying on the ground. The girls were casually saving the hummingbird's life (with Lauren afraid to touch it and giving it water) when an unfamiliar colleague walked by them and asked what they were doing. The new friend picked up the hummingbird and helped the little bird fly away. After the grand save, the unfamiliar face introduced himself and walked off. Lauren turned to Erika and asked "do you know that guy?"...Erika replied "nope" and little did either of them know Lauren would fall for the hummingbird savior :p<br/>
-***Lauren thinks this is not how they met because Hunter did not talk to her again for a few weeks***
-              </p>
-            </div>
-            <div class="column column-50">
-              <div class="something"></div>
-              <p class="our-story">
-Lauren and Hunter were working on the same floor of Gannett for a few months before ever running into each other. One Friday afternoon, Lauren was nervous for a date later that evening when she started pacing in the office. She ran into a group of unfamiliar co workers and one of them happened to be wearing a JMU sweatshirt. Everyone introduced themselves and Lauren brought up she was also a JMU grad. The group mentioned going to the gym at lunch and invited her to join next week if she wanted. She took note and later in the evening after a very sad and boring date could not wait for Monday's gym squad. After a few days of awkward conversations on gym equipment Lauren was asked out on a date! Lauren's favorite gym memory is Hunter telling her that he had a cat, loved Star Wars, and wanted to visit a local brewery…..which is where she had to pretend to like beer, not be allergic to cats, or share that she had never seen a Star Wars film. But despite having those odds against them, the force was with them ;)
-              </p>
-            </div>
+      <div class="container our-story-stories block">
+        <div class="row">
+          <div class="col-12 col-md-6 story">
+            <p class="bold">Lauren's Summary</p>
+            <p class="our-story">
+              Lauren was nervous for a date one Friday afternoon, so
+              she started pacing on the office floor. She ran into a guy in
+              a JMU sweatshirt that was talking to co-workers about
+              going to the gym at lunch. Turns out she wasn't interested
+              in the Friday night date, but the following week endured
+              lifting weights on her lunch break so she could talk to the
+              JMU alum ;)
+            </p>
+          </div>
+          <div class="col-12 col-md-6 story">
+            <p class="bold">Hunter's Summary</p>
+            <p class="our-story">
+              It was an early summer morning and Lauren and her
+              co-worker (and roomie!) were on the patio outside work
+              trying to save a hummingbird that was on the floor.
+              Hunter walked by the girls and decided to help them
+              save this bird's life. He was a savior and it was magical.
+              *Lauren thinks this doesn't count because no one
+              knew/nor asked for each other's names haha*
+            </p>
           </div>
         </div>
       </div>
 
     <!-- BRIDAL PARTY -->
-    <div class="bridal-party-title">
-      <h3 class="cabernet">Bridal Party</h3>
-    </div>
-    <div class="row bridal-party block">
-      <!-- TODO: how is bridal party organized on page? -->
-      <div v-for="person in bridalParty" :key="person.name" class="column column-50">
-        <person :name="person.name" :description="person.description" :how-we-met="person.howWeMet" :image-url="person.imageUrl"></person>
+    <div class="container">
+      <h3 class="bridal-party-title cabernet">Bridal Party</h3>
+      <div class="row">
+        <div v-for="person in bridalParty" :key="person.name" class="col-12 col-sm-5 col-md-4">
+          <person :name="person.name" :description="person.description" :title="person.title" :image-url="person.imageUrl"></person>
+        </div>
       </div>
     </div>
 
+    <hr>
 
     <!-- REGISTRY -->
-    <div class="registry-title">
+    <div class="container registry-title">
       <h3 class="cabernet">Registry</h3>
     </div>
     <div class="row registries">
-      <div class="column column-25">
-        <div class="registry">
-          <p>Amazon</p>
-        </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <img class="img-fluid amazon" src="./assets/amazon_logo.png" alt="">
       </div>
-      <div class="column column-25">
-        <div class="registry">
-          <p>Crate&amp;Barrel</p>
-        </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <img class="img-fluid crate" src="./assets/Crate-Barrel-Logo_white.png" alt="">
       </div>
-      <div class="column column-25">
-        <div class="registry">
-          <p>ZOLA</p>
-        </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <img class="img-fluid sonoma" src="./assets/sonoma.png" alt="">
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <img class="img-fluid zola" src="./assets/zola_white.png" alt="">
       </div>
     </div>
 
 
     <!-- CLOSING NOTES -->
-    <div class="row closing-notes">
-      <div class="column">
-        <p><span class="bold">Site Designed and Developed By:</span> Hunter and Lauren</p>
-        <p class="closing-day-count">See you in 339 Days!</p>
-      </div>
+    <div class="container closing-notes">
+      <p><span class="bold">Site Designed and Developed By:</span> Hunter and Lauren</p>
+      <p class="closing-day-count">See you in 339 Days!</p>
     </div>
     </div>
   </div>
@@ -220,73 +234,73 @@ export default {
           name: 'Jenna',
           title: 'Maid of Honor',
           description: 'Lauren\'s first friend and has more blackmail than the whole bridal party combined.',
-          imageUrl: ''
+          imageUrl: '/static/jenna_bw.jpg'
         },
         {
           name: 'Andrew',
           title: 'Best Man',
           description: 'Has witnessed his brother with hair. ___MORE___',
-          imageUrl: ''
+          imageUrl: '/static/andrew_bw.jpg'
         },
         {
           name: 'Alli',
           title: 'Bridesmaid',
           description: 'We shared a carpet square in Pre-K...it was kind of a big deal. Now we\'re family :)',
-          imageUrl: ''
+          imageUrl: '/static/alli_bw.jpg'
         },
         {
           name: 'Bryton',
           title: 'Groomsman',
           description: 'It all started in a townhouse in a college town far far away. Hunter\'s college roommate who also loves Star Wars.',
-          imageUrl: ''
+          imageUrl: '/static/bryton_bw.jpg'
         },
         {
           name: 'Carson',
           title: 'Bridesmaid',
           description: 'Adventures at camp and abroad. If it involves food and walking way too far...she\'s in!',
-          imageUrl: ''
+          imageUrl: '/static/carson_bw.jpg'
         },
         {
           name: 'Chad',
           title: 'Bridesdude',
-          description: 'Highschool to college to long phone calls about struggling to adult :p Chad has been Lauren’s wingman from the beginning!',
-          imageUrl: ''
+          description: 'Highschool to college to long phone calls about struggling to adult :p Chad has been Lauren\'s wingman from the beginning!',
+          imageUrl: '/static/chad_bw.jpg'
         },
         {
           name: 'John',
           title: 'Groomsman',
           description: 'He had to put up with Hunter as a teenager....drums and heavy metal. Respect.',
-          imageUrl: ''
+          imageUrl: '/static/john_bw.jpg'
         },
         {
           name: 'Katrina',
           title: 'Bridesmaid',
           description: 'She survived coding classes and media law with Lauren. Now she gets to celebrate with beer festivals in CO!',
-          imageUrl: ''
+          imageUrl: '/static/katrina_bw.jpg'
         },
         {
           name: 'Kevin',
           title: 'Groomsman',
           description: 'He has lived with Hunter and put up with his antics. You can find these guys at the movies or local breweries now.',
-          imageUrl: ''
+          imageUrl: '/static/kevin_bw.jpg'
         },
         {
           name: 'Molly',
           title: 'Bridesmaid',
-          description: 'She is Lauren’s most artistic friend! They took art classes together from grade school - high school.',
-          imageUrl: ''
+          description: 'She is Lauren\'s most artistic friend! They took art classes together from grade school - high school.',
+          imageUrl: '/static/molly_bw.jpg'
         },
         {
           name: 'Nicole',
           title: 'Bridesmaid',
           description: 'She met Lstearns senior year and the two have been inseperable since. She also coined the name Lstearns and won\'t be changing that...',
-          imageUrl: ''
+          imageUrl: '/static/nicole_bw.jpg'
         },
         {
           name: 'Sarah',
           title: 'Groomslady',
-          description: 'She is Hunter’s drinking buddy and Lauren\'s makeup guru. The perfect day for Sarah is a trip to Sephora and then an evening at a local brewery.',
-          imageUrl: ''
+          description: 'She is Hunter\'s drinking buddy and Lauren\'s makeup guru. The perfect day for Sarah is a trip to Sephora and then an evening at a local brewery.',
+          imageUrl: '/static/sarah_bw.jpg'
         }
       ]
     }
@@ -297,6 +311,9 @@ export default {
 <style>
   a {
     color: #000;  
+  }
+  p, h1, h2, h3 {
+    margin-bottom: 0;
   }
   .bold {
     font-weight: bold;
@@ -314,6 +331,10 @@ export default {
 
   .main {
     margin-top: 30px;
+  }
+
+  .lead-img {
+    max-width: 100%;
   }
 
   .block {
@@ -334,9 +355,14 @@ export default {
     padding: 10px 0;
   }
 
+  .photo-credit {
+    text-align: right;
+  }
+
   /* .meta-block {} */
   .nav {
     max-width: 560px;
+    margin-bottom: 20px;
   }
   .nav-links {
     list-style-type: none;
@@ -353,6 +379,10 @@ export default {
   }
   .nav-links a:hover {
     color: #540212;
+  }
+
+  .attractions {
+    margin: 40px 0;
   }
 
   .map {
@@ -380,8 +410,11 @@ export default {
     cursor: pointer;
     display: flex;
     font-weight: bold;
-    height: 200px;
+    height: 200px;    
     justify-content: center;
+    /* margin: 0 auto; */
+    margin: 0 auto 20px auto;
+    max-width: 300px;
   }
 
   .accommodation-details {
@@ -416,39 +449,17 @@ export default {
     font-size: 14px;
   }
 
-  .attractions {
-    background-color: #6395a4;
-    height: 600px;
-  }
-
   .shuttle {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     color: #fff;
   }
-
-  .our-story {
-    flex-direction: column;
-  }
-  .our-story-image {
-    background-color: grey;
-    height: 300px;
-    width: 100%;
-  }
-
-  .our-story-preface {
-    align-items: center;
-    display: flex !important;
-    flex-direction: column;
-    padding: 20px !important;
-  }
-
-  .our-story-preface-text {
-    width: 70%;
+  .story {
+    padding-bottom: 20px;
   }
 
   .our-story-stories {
-    text-align: left;
+    text-align: center;
   }
   
   .something {
@@ -467,6 +478,9 @@ export default {
     padding-top: 20px;
     text-align: left;
   }
+  .bridal-party-title {
+    margin-bottom: 15px;
+  }
 
   .bridesmaids, .groomsmen {
     height: 600px;
@@ -484,21 +498,9 @@ export default {
   }
 
   .registries {
+    align-items: center;
     background-color: #07334e;
-    justify-content: space-between;
-    height: 200px;
-  }
-
-  .registry {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-  }
-  /* TODO: remove one I get registry logos */
-  .registry p {
-    align-self: center;
-    font-weight: bold;
+    min-height: 200px;
   }
 
   .closing-notes {
@@ -508,6 +510,19 @@ export default {
   .closing-day-count {
     color: #540212;
     font-style: italic;
+  }
+
+  .amazon {
+    max-width: 75%;
+  }
+  .crate {
+    max-width: 70%;
+  }
+  .sonoma {
+    /* max-width: 60%; */
+  }
+  .zola {
+    max-width: 50%;
   }
 
   @media (max-width: 768px) {

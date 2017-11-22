@@ -1,30 +1,28 @@
 <template>
     <div class="person">
-        <div class="row">
-        <div class="column column-50 person-img">
-            <img :src="imageUrl" :alt="name">
-        </div>
-        <div class="column column-50 person-text">
-            <h3 class="person-name">{{name}}</h3>
-            <p class="person-description">
-                {{description}}
-            </p>
-            <p class="how-we-met bold">How we met:</p>
-            <p class="how-we-met-answer">{{howWeMet}}</p>
-        </div>
-        </div>
+        <img class="img-fluid" :src="imageUrl" :alt="name">
+        <h3 class="cabernet bold">{{name}}</h3>
+        <div class="title">{{title}}</div>
+        <div class="description">{{description}}</div>
     </div>
 </template>
 
 <script>
 export default {
     name: 'person',
-    props: ['imageUrl', 'name', 'description', 'howWeMet'],
+    props: ['imageUrl', 'name', 'description', 'title'],
 }
 </script>
 
 <style scoped>
     .person {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .title {
+        font-size: 1.6em;
+    }
+    .description {
+        font-size: .9em;
     }
 </style>
