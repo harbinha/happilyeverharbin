@@ -36,7 +36,9 @@
               <img class="img-fluid lead-img" src="./assets/lead-right.jpg" alt="Lauren and Hunter wedding">
             </div>
             <div class="w-100"></div>
-            <div class="col-12 photo-credit">Melissa Durham Photography</div>
+            <div class="col-12 photo-credit">
+              <a href="http://melissadurham.com/" target="_blank">Melissa Durham Photography</a>
+            </div>
           </div>
 
         <!-- INTRO BLOCK -->
@@ -103,7 +105,7 @@
         <div class="container">
           <div class="row">
             <div class="col airports-title">
-              <h3 class="bold">Airports</h3>
+              <h3 class="bold bar-title">Airports</h3>
             </div>
             <div class="w-100"></div>
             <div class="col airports-title">
@@ -129,7 +131,7 @@
       <!-- SHUTTLE -->
       <div class="main-row row shuttle">
         <div class="container">
-          <h3 class="bold">Shuttles</h3>
+          <h3 class="bold bar-title">Shuttles</h3>
           <p class="shuttles-first-line">Shuttle information will be included in your invitation!</p>
           <p>Please note that the ceremony will begin at 6:00 PM</p>
         </div>
@@ -232,7 +234,7 @@
 
     <!-- CLOSING NOTES -->
     <div class="container closing-notes">
-      <p><span class="bold">Site Designed and Developed By:</span> Hunter and Lauren</p>
+      <p><span class="bold">Site Designed and Developed By:</span><br>Hunter and Lauren</p>
       <p class="closing-day-count">See you in {{daysToGo}} Days!</p>
     </div>
     </div>
@@ -392,7 +394,12 @@ export default {
     padding: 10px 0;
   }
 
+  .bar-title {
+    padding-bottom: 15px;
+  }
+
   .photo-credit {
+    font-size: 14px;
     text-align: right;
   }
 
@@ -467,7 +474,7 @@ export default {
   .airports, .shuttle {
     background-color: #07334e;
     padding: 20px;
-    padding: 20px 20px 26px 20px;
+    padding: 50px 20px 50px 20px;
   }
   .shuttles-first-line {
     font-size: 18px;
