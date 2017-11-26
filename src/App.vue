@@ -400,6 +400,7 @@ export default {
 
   .photo-credit {
     font-size: 14px;
+    padding-top: 7px;
     text-align: right;
   }
 
