@@ -62,7 +62,7 @@
 
         <!-- ACCOMmODATIONS -->
         <a name="accommodations"></a>
-        <div class="row accommodations-header block">
+        <div class="accommodations-header block">
           <h3 class="accommodations-title cabernet">Accommodations</h3>
           <div class="bold">We have room blocks at the following hotels</div>
         </div>
@@ -141,12 +141,15 @@
       <div class="container">
         <h3 class="our-story-title">Our Story</h3>
       </div>
-      <div class="main-row row story-photo block">
-        <p style="color: white;">placeholder.. image needed</p>
-        <!-- <img src="./assets/our_story.png" alt="" class="img-fluid"> -->
-      </div>
+      <!-- <div class="container"> -->
+        <div class="main-row row block">
+          <div class="col-12 story-photo">
+            <img src="./assets/new_saber.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      <!-- </div> -->
 
-      <div class="container">
+      <div class="container our-story-intro">
         <p>Lauren and Hunter can both agree that they met at work.<br />
           However, there is still debate whether it was the moment they ran into each other with a hummingbird or a JMU sweatshirt that sealed the deal.</p>
       </div>
@@ -198,26 +201,31 @@
     <div class="container registry-title">
       <h3 class="cabernet">Registry</h3>
     </div>
+    
     <div class="main-row row registries">
-      <div class="col-12 col-sm-6 col-md-3 registry">
-        <a :href="registries.amazon" target="_blank">
-          <img class="img-fluid amazon" src="./assets/amazon_logo.png" alt="">
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 registry">
-        <a :href="registries.crate" target="_blank">
-          <img class="img-fluid crate" src="./assets/Crate-Barrel-Logo_white.png" alt="">
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 registry">
-        <a :href="registries.sonoma" target="_blank">
-          <img class="img-fluid sonoma" src="./assets/sonoma.png" alt="">
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 registry">
-        <a :href="registries.zola" target="_blank">
-          <img class="img-fluid zola" src="./assets/zola_white.png" alt="">
-        </a>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3 registry">
+            <a :href="registries.amazon" target="_blank">
+              <img class="img-fluid amazon" src="./assets/amazon_logo.png" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 registry">
+            <a :href="registries.crate" target="_blank">
+              <img class="img-fluid crate" src="./assets/Crate-Barrel-Logo_white.png" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 registry">
+            <a :href="registries.sonoma" target="_blank">
+              <img class="img-fluid sonoma" src="./assets/sonoma.png" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 registry">
+            <a :href="registries.zola" target="_blank">
+              <img class="img-fluid zola" src="./assets/zola_white.png" alt="">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -486,10 +494,11 @@ export default {
   .story {
     padding-bottom: 20px;
   }
-
   .story-photo {
-    background-color: grey;
-    height: 290px;
+    padding: 0;
+  }
+  .our-story-intro {
+    margin-top: 20px;
   }
   .our-story-stories {
     text-align: center;
