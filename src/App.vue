@@ -56,7 +56,7 @@
       <!-- MAP -->
       <div class="main-row row map">
         <div class="container">
-          <img class="img-fluid" src="./assets/map.svg" alt="wedding map">
+          <img class="img-fluid" src="./assets/latest_map.png" alt="wedding map">
         </div>
       </div>
 
@@ -162,7 +162,7 @@
             <p class="bold">Lauren's Story</p>
             <p class="our-story">
               Lauren was nervous for a date one Friday afternoon, so
-              she started pacing on the office floor. She ran into a guy in
+              she started pacing the office floor. She ran into a guy in
               a JMU sweatshirt that was talking to co-workers about
               going to the gym at lunch. Turns out she wasn't interested
               in the Friday night date, but the following week endured
