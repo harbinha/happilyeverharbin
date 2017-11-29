@@ -29,11 +29,11 @@
 
         <!-- OUR FACES -->
           <div class="row our-faces">
-            <div class="col-12 col-sm-8 lead-first-img">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 lead-first-img">
               <img class="img-fluid lead-img" src="./assets/lead-left.jpg" alt="Lauren and Hunter wedding">
             </div>
-            <div class="col-12 col-sm-4">
-              <img class="img-fluid lead-img" src="./assets/lead-right.jpg" alt="Lauren and Hunter wedding">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+              <img class="img-fluid lead-img" src="./assets/new_top_image.jpg" alt="Lauren and Hunter wedding">
             </div>
             <div class="w-100"></div>
             <div class="col-12 photo-credit">
@@ -577,6 +577,26 @@ export default {
     max-width: 55%;
   }
 
+  @media (min-width: 576px) {
+    .lead-img {
+      height: 220px;
+    }
+  }
+  @media (min-width: 768px) {
+    .lead-img {
+      height: 302px;
+    }
+  }
+  @media (min-width: 992px) {
+    .lead-img {
+      height: 407px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .lead-img {
+      height: 488px;
+    }
+  }
   @media (max-width: 768px) {
       .header-meta {
         order: -1;
